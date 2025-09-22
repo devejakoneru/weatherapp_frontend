@@ -1,0 +1,132 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* App Container */
+.App {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  background-color: #0077b6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #005f87;
+  transform: scale(1.05);
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 5px rgba(0, 119, 182, 0.4);
+}
+
+/* Weather Display */
+.weather {
+  margin-top: 20px;
+}
+
+.weather img {
+  height: 64px;
+  width: 64px;
+}
+
+.weather ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.weather .row {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.weather .col-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer (optional) */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
